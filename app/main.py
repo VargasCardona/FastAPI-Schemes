@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from starlette.responses import RedirectResponse
 
 # App routes
-from .routes.user import user_route
+from .routes.pokemon import pokemon_route
 
 # app instance
 app = FastAPI()
@@ -12,4 +12,4 @@ async def root():
     return RedirectResponse(url="/docs")
 
 # -------- Usuario --------
-app.include_router(user_route, prefix="/users", tags=["Usuarios"])
+app.include_router(pokemon_route, prefix="/pokemon", tags=["Pokemon"])
