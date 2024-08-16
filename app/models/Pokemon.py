@@ -8,3 +8,4 @@ class Pokemon(BaseModel):
     name: str
     item: Item 
     stats: Stats
+    sprite_route: str

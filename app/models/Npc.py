@@ -5,4 +5,5 @@ class Npc(BaseModel):
     name: str
     base_dialog: str 
     is_defeated: bool
+    sprite_route: str
 

@@ -7,4 +7,5 @@ class Trainer(BaseModel):
     name: str
     party: Pokemon
     badges: str
+    sprite_route: str
 
